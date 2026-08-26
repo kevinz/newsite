@@ -60,9 +60,9 @@ export default defineConfig({
 				// lang 取 Astro.locals.starlightRoute.lang(随我们 root=zh-CN 即中文)。
 				starlightGiscus({
 					repo: 'kevinz/newsite',
-					repoId: 'REPO_ID_PLACEHOLDER', // 人类去 https://giscus.app 选 kevinz/newsite + Announcements 抄回
-					category: 'Announcements',
-					categoryId: 'CATEGORY_ID_PLACEHOLDER', // 同上
+					repoId: 'R_kgDOUEdN6g', // 取自 gh api graphql .node_id
+					category: 'Announcements', // 该讨论分类 slug(开 Discussions 时 GitHub 自动建)
+					categoryId: 'DIC_kwDOUEdN6s4DENvZ', // 同上,GraphQL discussionCategories
 					mapping: 'pathname',
 					reactions: true,
 					inputPosition: 'top',
