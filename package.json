@@ -11,8 +11,12 @@
   },
   "dependencies": {
     "@astrojs/starlight": "^0.41.9",
+    "@keystatic/astro": "^6.0.0",
+    "@keystatic/core": "^0.6.9",
     "astro": "^7.1.6",
-    "sharp": "^0.35.3"
+    "sharp": "^0.35.3",
+    "starlight-blog": "^0.29.0",
+    "starlight-giscus": "^1.2.0"
   },
   "allowScripts": {
     "esbuild": true
