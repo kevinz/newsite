@@ -1,42 +1,75 @@
 ---
-title: Platform Engineering Lab
-description: 一个面向平台工程的开源项目/框架,聚焦云原生与开发者体验。博客持续更新业界动态与思考。
+title: DevOps Gold
+description: AI 原生 DevOps 与平台工程实践
 template: splash
 hero:
-  tagline: 推介作者单一开源项目/框架的展示站;blog 持续更新业界动态作佐证。(文案占位,后续填实)
+  tagline: 让 AI 成为可治理的 DevOps 组织能力
   actions:
-    - text: 查看项目
+    - text: 阅读核心观点
+      link: /blog/ai-to-organizational-capability/
+      icon: open-book
+      variant: primary
+    - text: 关注 GitHub
       link: https://github.com/kevinz
       icon: github
-      variant: primary
-    - text: 阅读博客
-      link: /blog/
-      icon: right-arrow
+      variant: secondary
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## 这是我的开源项目展示站
+## 写给谁
 
-这里收录我维护的**开源项目/框架**。首页聚焦推介,侧栏「博客」持续更新平台工程、云原生与开发者体验的业界动态 —— 既作项目佐证,也作我保持更新的内驱力。
+DevOps Gold 写给正在推动团队从基础设施和流水线维护，走向**平台产品与 AI 能力建设**的 DevOps/SRE 负责人。
 
-> 项目信息为占位内容。请在 `src/content/docs/index.mdx` 填入你的项目名、简介与 GitHub 仓库链接,并更新 `astro.config.mjs` 的 `title` 与 `social`。
-
-## 核心特性
-
-<CardGrid stagger>
-	<Card title="核心能力" icon="rocket">
-		用一两句话描述你的项目解决的核心问题。(占位)
+<CardGrid>
+	<Card title="复杂度，而不是人数" icon="seti">
+		无论团队大小，只要交付链路跨越 ECS、Jenkins、GitLab、容器平台、权限系统和内部服务，就已经需要平台化治理。
 	</Card>
-	<Card title="为何用它" icon="seti"
-	>
-		相比既有方案的差异化优势。(占位)
-	</Card>
-	<Card title="快速上手" icon="pencil"
-	>
-		安装与最小可运行示例的入口。(占位)
-	</Card>
-	<Card title="阅读博客" icon="open-book">
-		业界动态与深度思考,佐证项目立场 → [前往博客](/blog/).
+	<Card title="从存量系统出发" icon="pencil">
+		这里不假设企业拥有一套干净的云原生环境。自建系统不是需要掩盖的历史包袱，而是转型必须面对的真实起点。
 	</Card>
 </CardGrid>
+
+## 核心判断
+
+> **AI 原生 DevOps 不是给每个工具接一个大模型，也不是推倒重建一套理想化的云原生平台。**
+
+平台工程要在既有系统之上建立统一的**能力契约、上下文、权限、护栏和反馈**，使人和 Agent 都能安全地完成交付与运维。
+
+这是一条渐进路径：AI 先辅助人员工作，再被封装为可复用的平台能力，最终让 Agent 成为受治理的平台使用者。
+
+## 四个内容支柱
+
+<CardGrid stagger>
+	<Card title="组织转型" icon="rocket">
+		DevOps 团队如何以可持续的节奏，走向平台工程与 AI 原生工作方式。
+	</Card>
+	<Card title="Agent 可操作平台" icon="seti">
+		能力契约、上下文、权限、护栏、评测与反馈如何共同约束 Agent 行为。
+	</Card>
+	<Card title="存量系统平台化" icon="pencil">
+		如何整合 ECS、Jenkins、GitLab、容器平台、IaC 和长期运行的自建服务。
+	</Card>
+	<Card title="可信与治理" icon="open-book">
+		身份、权限、供应链、安全边界和生产责任如何在 AI 时代继续成立。
+	</Card>
+</CardGrid>
+
+## 最新内容
+
+<CardGrid>
+	<Card title="支柱文章 · 原创" icon="open-book">
+		[从 AI 工具到组织能力：DevOps 团队的平台工程路径](/blog/ai-to-organizational-capability/)
+
+		为什么个人使用 AI 不等于组织获得 AI 能力，以及平台工程如何让 Agent 安全进入真实的交付与运维系统。
+	</Card>
+	<Card title="持续更新" icon="pencil">
+		后续将以原创、行业译介、评论和授权翻译，讨论小团队的平台化判断、Agent 权限、IaC 与国内自建系统场景。 [查看全部文章](/blog/)
+	</Card>
+</CardGrid>
+
+## 关于作者
+
+**Kevin Zeng（Benz）**，大厂架构师，实践领域覆盖平台权限、云平台、容器网络与平台、可信平台、Agent 平台和基础设施即代码。
+
+本站使用匿名化场景分享工程判断，不披露雇主、内部系统和敏感数据。更多经历、联系方式与编辑规则见[关于作者](/about/)。

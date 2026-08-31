@@ -1,0 +1,40 @@
+---
+import DefaultPagination from '@astrojs/starlight/components/Pagination.astro';
+
+const { entry, lang } = Astro.locals.starlightRoute;
+const normalizedFilePath = entry.filePath?.replaceAll('\\', '/') ?? '';
+const isBlogArticle = normalizedFilePath.includes('/content/docs/blog/') && Boolean(entry.data.date);
+---
+
+{
+	isBlogArticle && (
+		<section class="giscus-section" aria-label="文章评论">
+			<script
+				is:inline
+				src="https://giscus.app/client.js"
+				data-repo="kevinz/newsite"
+				data-repo-id="R_kgDOUEdN6g"
+				data-category="Announcements"
+				data-category-id="DIC_kwDOUEdN6s4DENvZ"
+				data-mapping="pathname"
+				data-strict="1"
+				data-reactions-enabled="1"
+				data-emit-metadata="0"
+				data-input-position="top"
+				data-theme="preferred_color_scheme"
+				data-lang={lang}
+				data-loading="lazy"
+				crossorigin="anonymous"
+				async
+			></script>
+		</section>
+	)
+}
+
+<DefaultPagination />
+
+<style>
+	.giscus-section {
+		margin-block: 2.5rem 1.5rem;
+	}
+</style>
