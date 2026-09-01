@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#1f2937"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#background)"/>
+  <path d="M104 88 166 150 104 212 42 150 104 88Z" fill="#F4B942"/>
+  <path d="M104 116 138 150 104 184 70 150 104 116Z" fill="#111827"/>
+  <circle cx="104" cy="150" r="11" fill="#F4B942"/>
+  <text x="70" y="340" fill="#F9FAFB" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="700">DevOps Gold</text>
+  <text x="74" y="430" fill="#F4B942" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="600">AI-Native DevOps &amp; Platform Engineering</text>
+  <text x="76" y="520" fill="#D1D5DB" font-family="Inter, Arial, sans-serif" font-size="30">Turning AI tools into organizational capability</text>
+</svg>

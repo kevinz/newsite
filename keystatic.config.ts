@@ -29,8 +29,10 @@ export default config({
 					label: '作者',
 					itemLabel: (props) => props.fields.value,
 				}),
-				tags: fields.array(fields.text({ label: '标签' }), {
-					label: '标签',
+				// 每篇文章必须且只能使用一个稿件类型标签：原创、行业译介、评论、授权翻译。
+				// 建议将稿件类型放在第一项，其余项用于内容支柱与主题。
+				tags: fields.array(fields.text({ label: '标签值' }), {
+					label: '标签（第一项为稿件类型）',
 					itemLabel: (props) => props.fields.value,
 				}),
 				content: fields.mdx({

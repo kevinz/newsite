@@ -5,10 +5,11 @@ date: 2026-08-26
 authors:
   - benz
 tags:
+  - 原创
   - 平台工程
   - DevOps
   - IDP
-draft: false
+draft: true
 ---
 
 ## 先别急着改名
