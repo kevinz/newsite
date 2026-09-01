@@ -1,0 +1,9 @@
+---
+import DefaultDraftContentNotice from '@astrojs/starlight/components/DraftContentNotice.astro';
+
+const { entry } = Astro.locals.starlightRoute;
+const normalizedFilePath = entry.filePath?.replaceAll('\\', '/') ?? '';
+const isNotFoundPage = entry.id === '404' || normalizedFilePath.endsWith('/content/docs/404.md');
+---
+
+{!isNotFoundPage && <DefaultDraftContentNotice />}

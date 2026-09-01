@@ -47,6 +47,7 @@ export default defineConfig({
 				},
 			],
 			components: {
+				DraftContentNotice: './src/components/DraftContentNotice.astro',
 				Pagination: './src/components/BlogPagination.astro',
 			},
 			sidebar: [],
