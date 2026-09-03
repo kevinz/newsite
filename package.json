@@ -20,5 +20,8 @@
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "@astrojs/react": "^6.0.5"
   }
 }
